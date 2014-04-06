@@ -1,0 +1,17 @@
+<?php
+$PAGE_HEADER = "";
+
+//PAGE HEADER
+
+if (isset($_GET['s1'])) {
+	$PAGE_HEADER = ucfirst($_GET['s1']);
+} elseif (isset($_GET['s'])) {
+	$PAGE_HEADER = ucfirst($_GET['s']);
+} elseif (isset($_GET['v'])) {
+	if ($_GET['v'] == "graphic_design") {$PAGE_HEADER = "Graphic Design"; }
+	else { 	$PAGE_HEADER = ucfirst($_GET['v']); }
+
+} else {
+	$PAGE_HEADER = "Welcome to myJourney!";
+}
+	echo "<h1>".str_replace("_", " ", $PAGE_HEADER)."</h1>";

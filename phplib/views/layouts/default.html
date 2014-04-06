@@ -1,0 +1,68 @@
+						<?php include (LAYOUTS . 'header.html'); ?>
+
+<body>
+
+	<div id='container'>
+
+		<div id='masthead'>
+
+			<div id='nav_main'>
+
+					<?php include (LAYOUTS . 'navigation.html'); ?>
+
+			</div>
+
+		</div>
+
+
+
+		<div id='content'>
+
+			<div id='nav_sub'>
+			
+					<?php include (LAYOUTS . 'nav_sub.html'); ?>
+
+			</div>
+			
+			
+			<div id='main'>
+				
+				<div id="decor_bar">
+			
+					<div id="page_header">
+				
+						<?php include (LAYOUTS . 'page_header.html'); ?>
+				
+					</div>
+			
+					<div id='nav_sub1'>
+				
+						<?php include (LAYOUTS . 'nav_sub1.html'); ?>
+				
+					</div>
+					
+				</div>
+				
+				<br/>
+				
+				<div id='view'>
+	
+				<?php include (VIEWS . "$VIEW"); ?>
+			
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div id='footer'>
+
+				<?php include (LAYOUTS . "footer.html"); ?>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>

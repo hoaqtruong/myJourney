@@ -1,0 +1,41 @@
+<?php
+//$NAV_MAIN = array('home', 'wall_photos','graphic_design', 'instructional_design', 'computer_programing', 'blog');
+$main_nav = "";
+if (isset($_REQUEST['v'])) {
+	$main_nav = $_REQUEST['v'];	
+}
+
+$nab_sub = "";
+if (isset($_REQUEST['s'])) {
+	$nab_sub = $_REQUEST['s'];	
+}
+
+$nab_sub1 = "";
+if (isset($_REQUEST['s1'])) {
+	$get_nab_sub1 = $_REQUEST['s1'];	
+}
+
+switch ($nab_sub){
+	case "graphic_design":
+		$NAV_S1 = array('logo_n_more', 'book_covers', 'magazine_covers',  'product_packaging', 'posters', 'UI design');
+		break;	
+	default:
+		$NAV_S1 = '';
+}
+
+
+
+
+//NAV_SUB1
+if (isset($_REQUEST['s']) && $NAV_S1 != '') {
+	
+	$NAV_SUB1 = '<ul class="nav_sub1">';
+	foreach ($NAV_S1 as $s1) {
+		
+		$query_string = 'v='. urlencode($main_nav) . '&s='. urlencode($nab_sub).  '&s1='. urlencode($s1);;
+		
+		$NAV_SUB1 .= '<li class="nav_sub1 '. $s1 . '"><a href="?'. htmlentities($query_string). '">' . str_replace('_', ' ', $s1) . '</a></li>';
+	}
+	$NAV_SUB1 .= '</ul>';
+	echo $NAV_SUB1;
+}

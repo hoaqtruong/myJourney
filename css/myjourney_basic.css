@@ -1,0 +1,462 @@
+/* Basic CSS Document for myJournal site */
+/* color scheme
+ *#D97904 (RGB: 217 121 4) Orange
+ *#D97977 ()
+ *#CD6D28 (RGB: 206 109 40) Dark Orange
+ *#938A51 (RGB 124 138 81) Ghi
+ *#938A28
+ *#807F3f (RGB 128 127 63) Ghi tuoi
+ *#BDAD6F (RGB 189 173 111) Mau da
+ *#d0ecf4 Xanh bien nhat
+ *#d4eded Xanh nhat
+ *banner_png8.png W: 974px H: 150px
+ *banner_png24.png W: 974px H: 150px
+ *botton: W: 95px        H: 45px */
+/* line 19, ../sass/myjourney_basic.css.sass */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: tahoma, helvetica, arial, san-serif;
+  /*        color: #5f6252; */
+  color: #465450;
+}
+
+/* line 26, ../sass/myjourney_basic.css.sass */
+#view {
+  margin-top: 20px;
+  position: relative;
+}
+/* line 30, ../sass/myjourney_basic.css.sass */
+#view p {
+  margin-right: 150px;
+}
+
+/* line 32, ../sass/myjourney_basic.css.sass */
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+/* line 37, ../sass/myjourney_basic.css.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 39, ../sass/myjourney_basic.css.sass */
+i {
+  font-style: italic;
+}
+
+/* line 42, ../sass/myjourney_basic.css.sass */
+h1 {
+  color: #938a51;
+  font-size: 2em;
+  margin: 3px 0 0 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 48, ../sass/myjourney_basic.css.sass */
+h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 54, ../sass/myjourney_basic.css.sass */
+hr {
+  border-style: solid 5px ridge;
+}
+
+/* line 57, ../sass/myjourney_basic.css.sass */
+img {
+  border-style: none;
+  margin: 0 auto;
+}
+
+/* -------------- GENERAL CLASSES --------------- */
+/* line 63, ../sass/myjourney_basic.css.sass */
+.clickable {
+  cursor: pointer;
+}
+
+/* -------------- GENERAL LAYOUT ELEMENTS ------- */
+/* line 67, ../sass/myjourney_basic.css.sass */
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* line 71, ../sass/myjourney_basic.css.sass */
+#masthead {
+  position: relative;
+  width: 974px;
+  height: 110px;
+  margin-bottom: 10px;
+}
+
+/* line 77, ../sass/myjourney_basic.css.sass */
+#content {
+  position: relative;
+  float: left;
+  font-size: 0.8em;
+  width: 1065px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  z-index: 1000;
+  border: 1px dashed #938a28;
+  margin-bottom: 12px;
+}
+
+/* line 89, ../sass/myjourney_basic.css.sass */
+#nav_sub {
+  float: left;
+  width: 15%;
+}
+
+/* line 93, ../sass/myjourney_basic.css.sass */
+.nav_sub {
+  margin: 12px 0 12px 0;
+}
+/* line 95, ../sass/myjourney_basic.css.sass */
+.nav_sub li {
+  margin: 5px;
+}
+
+/* line 98, ../sass/myjourney_basic.css.sass */
+#main {
+  margin-left: 20%;
+  padding-bottom: 10px;
+}
+
+/* line 102, ../sass/myjourney_basic.css.sass */
+#display {
+  clear: both;
+  width: 974px;
+  margin: 0;
+}
+
+/* line 107, ../sass/myjourney_basic.css.sass */
+#decor_bar {
+  margin: 3px 0 0 0;
+  padding: 0px;
+  height: 12px;
+  -moz-border-top-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  z-index: 1000;
+}
+
+/* line 115, ../sass/myjourney_basic.css.sass */
+div#page_header {
+  margin: 10px 0 20px 0px;
+  position: relative;
+}
+
+/* line 119, ../sass/myjourney_basic.css.sass */
+#footer {
+  clear: both;
+  font: 0.7em italic tahoma, arial, san-serif;
+  color: #938a28;
+  width: 974px;
+}
+
+/* -------------- MAIN NAVIGATION --------------------- */
+/* line 136, ../sass/myjourney_basic.css.sass */
+li.selected_main_nav a span {
+  text-transform: lowercase;
+}
+
+/* line 140, ../sass/myjourney_basic.css.sass */
+div#nav_main ul.nav_main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 0px;
+}
+/* line 11, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+div#nav_main ul.nav_main li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 60, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+div#nav_main ul.nav_main li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+div#nav_main ul.nav_main li:first-child, div#nav_main ul.nav_main li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+div#nav_main ul.nav_main li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+div#nav_main ul.nav_main li.last {
+  padding-right: 0;
+}
+/* line 146, ../sass/myjourney_basic.css.sass */
+div#nav_main li {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+/* line 151, ../sass/myjourney_basic.css.sass */
+div#nav_main li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #6a5039;
+}
+/* line 4, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+div#nav_main li a:hover {
+  text-decoration: underline;
+}
+/* line 157, ../sass/myjourney_basic.css.sass */
+div#nav_main li a:visited {
+  color: #6a5039;
+}
+/* line 159, ../sass/myjourney_basic.css.sass */
+div#nav_main li a:hover {
+  color: #cd6d28;
+}
+/* line 161, ../sass/myjourney_basic.css.sass */
+div#nav_main li a.selected {
+  color: white;
+}
+/* line 164, ../sass/myjourney_basic.css.sass */
+div#nav_main li:first-child {
+  border-right: 1px solid;
+  border-left: 0 none;
+}
+/* line 168, ../sass/myjourney_basic.css.sass */
+div#nav_main li:last-child {
+  border-left: 1px solid;
+  border-right: 0 none;
+}
+
+/* -------------- SUB NAVIGATION --------------------- */
+/* line 175, ../sass/myjourney_basic.css.sass */
+#nav_sub ul {
+  list-style: none;
+  margin-left: 40px;
+}
+/* line 178, ../sass/myjourney_basic.css.sass */
+#nav_sub li {
+  padding-top: 10px;
+}
+/* line 180, ../sass/myjourney_basic.css.sass */
+#nav_sub a {
+  text-decoration: none;
+  color: #6a5039;
+  text-transform: uppercase;
+}
+/* line 184, ../sass/myjourney_basic.css.sass */
+#nav_sub a:visited {
+  color: #6a5039;
+  font-weight: normal;
+}
+/* line 187, ../sass/myjourney_basic.css.sass */
+#nav_sub a:hover {
+  color: #cd6d28;
+}
+/* line 189, ../sass/myjourney_basic.css.sass */
+#nav_sub a.selected {
+  color: white;
+  background: #938a51;
+  margin-right: 2px;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  padding-bottom: 0.1em;
+}
+
+/* -------------- PAGE-HEADER --------------------- */
+/* -------------- NAV_SUB_H NAVIGATION --------------------- */
+/* line 201, ../sass/myjourney_basic.css.sass */
+#nav_sub_h, #nav_sub1 {
+  margin: 2px 0 0 0;
+  padding: 0;
+  height: 2px;
+  background: #bdad6f;
+}
+/* line 206, ../sass/myjourney_basic.css.sass */
+#nav_sub_h li, #nav_sub1 li {
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 0 10px 0 10px;
+  list-style: none;
+  margin: 0;
+}
+/* line 213, ../sass/myjourney_basic.css.sass */
+#nav_sub_h a, #nav_sub1 a {
+  text-decoration: none;
+  font-style: bold;
+  font-size: 1.1em;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+/* line 220, ../sass/myjourney_basic.css.sass */
+#nav_sub_h a:hover, #nav_sub1 a:hover {
+  color: #cd6d28;
+}
+
+/* -------------- SUB1 NAVIGATION --------------------- */
+/* line 225, ../sass/myjourney_basic.css.sass */
+#nav_sub1 {
+  display: none;
+}
+
+/* -------------- IMG TABLE --------------------- */
+/* line 230, ../sass/myjourney_basic.css.sass */
+div#img_tbl_container {
+  margin: 30px 0 30px 0;
+}
+
+/* line 233, ../sass/myjourney_basic.css.sass */
+tr.img_tbl_row {
+  height: 152px;
+  border: 1px dashed #938a28;
+  margin: 10px;
+}
+
+/* line 238, ../sass/myjourney_basic.css.sass */
+td.img_tbl_col {
+  width: 152px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 244, ../sass/myjourney_basic.css.sass */
+div#img_tbl_container img {
+  padding: auto;
+  margin: auto;
+}
+
+/* -------------- WALL PHOTOS NAVIGATION --------------------- */
+/* line 250, ../sass/myjourney_basic.css.sass */
+#nav_wall_photos {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #ffea93;
+  -moz-border-top-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  z-index: 1000;
+}
+/* line 257, ../sass/myjourney_basic.css.sass */
+#nav_wall_photos li {
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 0 10px 30px 10px;
+  list-style: none;
+}
+/* line 263, ../sass/myjourney_basic.css.sass */
+#nav_wall_photos a {
+  text-decoration: none;
+  font-style: bold;
+  font-size: 1.1em;
+  color: black;
+}
+/* line 268, ../sass/myjourney_basic.css.sass */
+#nav_wall_photos a:hover {
+  color: #cd6d28;
+}
+
+/* -------------- WALL PHOTOS TABLE --------------------- */
+/* line 273, ../sass/myjourney_basic.css.sass */
+tr.wall_photos_row {
+  height: 152px;
+  background-color: #71735c;
+  border: 1px dashed #938a28;
+  margin: 10px;
+}
+
+/* line 279, ../sass/myjourney_basic.css.sass */
+td.wall_photos_col {
+  width: 152px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 285, ../sass/myjourney_basic.css.sass */
+div#nav_wall_photos_container img {
+  padding: auto;
+  margin: auto;
+}
+
+/* -------------- DISPLAY IMAGE --------------------- */
+/* line 291, ../sass/myjourney_basic.css.sass */
+#display {
+  margin: 0;
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 296, ../sass/myjourney_basic.css.sass */
+#display a {
+  text-decoration: none;
+}
+/* line 298, ../sass/myjourney_basic.css.sass */
+#display a.selected {
+  text-decoration: none;
+  color: red;
+  border: 1px;
+}
+
+/* line 303, ../sass/myjourney_basic.css.sass */
+#display_img {
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* -------------- TABLE -------------------- */
+/* line 308, ../sass/myjourney_basic.css.sass */
+table {
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+/* line 312, ../sass/myjourney_basic.css.sass */
+table caption.IDesign_caption {
+  text-align: left;
+  font-size: 12px;
+  font-style: italic;
+  padding: 0px 6px 12px 0px;
+  color: gray;
+}
+
+/* line 319, ../sass/myjourney_basic.css.sass */
+tbody {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+/* line 323, ../sass/myjourney_basic.css.sass */
+td {
+  padding: 10px;
+}

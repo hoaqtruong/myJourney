@@ -1,0 +1,1 @@
+<?php //waiting for PHP 5.3 ?>

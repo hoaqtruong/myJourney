@@ -1,0 +1,97 @@
+
+/*
+=gallery
+-------- */
+.gallery {
+        min-height: 108px;
+        padding: 0;
+        margin: 18px 0;
+        list-style: none;
+}
+* html .gallery {
+        height: 108px; /* min-height for lte IE6 */
+}
+.gallery.active {
+        background: #eee;
+}
+.gallery li {
+        float: left;
+        padding: 8px;
+        margin: 8px;
+        border: 1px solid #ccc;
+}
+.tb_thumbmail {
+        display: block;
+        padding: 7px;
+        /*border: 1px solid #ccc; */
+        background: #fff;
+}
+.displayBox img {
+        border: 25px solid #222;
+}
+/* img title */
+.gallery p {
+        float: left;
+        padding: 0;
+        margin: 0;
+}
+/* img toolbar */
+.gallery div {
+        float: right;
+}
+.gallery div a {
+        float: left;
+        width: 24px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: -9999px; /* Phark revisited image replacement */
+}
+.gallery div a:focus {
+        outline: 0;
+}
+
+
+/*==============================
+=PAGER
+==============================*/
+div.pager {
+  margin-bottom: .25em;
+}
+
+.page-number {
+  padding: .2em;
+}
+.page-number {
+  border: 1px solid #ccc;
+  margin-right: 2px;
+}
+
+.active {
+  background: #ccf;
+  border: 1px solid #006;
+}
+
+/*
+================================
+=FLOAT CLEARING
+================================ */
+#body_wrap, ul.gallery {
+        display: inline-block;
+}
+#body_wrap:after, ul.gallery:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+}
+* html #body_wrap, * html ul.gallery {
+        height: 1%;
+}
+#body_wrap, ul.gallery{
+        display: block;
+}
+
+
+

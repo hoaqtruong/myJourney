@@ -1,0 +1,13 @@
+<?php require(CONTROLLERS.'wall_photos.php');?>
+
+<div>
+<script type="text/javascript">
+        numPerPage = 12;
+</script>
+        <?php
+
+        echo $folder->display_img_table($imgs);
+
+?>
+
+</div>

@@ -1,0 +1,13 @@
+<?php
+include(CONTROLLERS.'nav_sub.php');
+
+
+	$NAV_SUB = '<ul class="nav_sub_h">';
+	foreach ($NAV_S as $s) {
+		
+		$query_string = 'v='. urlencode($main_nav) . '&s='. urlencode($s);
+		
+		$NAV_SUB .= '<li class="nav_sub_h '. $s . '"><a href="?'. htmlentities($query_string). '">' . str_replace('_', ' ', $s) . '</a></li>';
+	}
+	$NAV_SUB .= '</ul>';
+	echo $NAV_SUB;
