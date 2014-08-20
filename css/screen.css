@@ -30,9 +30,6 @@ html {
 }
 
 /* line 24, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
 
 /* line 26, ../../../.rvm/gems/ruby-1.9.2-p290@hoatruong/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
@@ -131,6 +128,35 @@ h3 {
   font-size: 1.2em;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+h4 {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 150px;
+}
+
+ul {
+    list-style-type: square;
+    font-weight: normal;
+    font-size: 1em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 150px;
+    line-height: 18px;
+    padding-left: 30px;
+}
+ol {
+    list-style-type: lower-alpha;
+    font-weight: normal;
+    font-size: 1em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 150px;
+    line-height: 18px;
+    padding-left: 30px;
+
 }
 
 /* line 54, ../sass/myjourney_basic.css.sass */
@@ -508,8 +534,9 @@ table caption.IDesign_caption {
   text-align: left;
   font-size: 12px;
   font-style: italic;
+  line-height: normal;
   padding: 0px 6px 12px 0px;
-  color: gray;
+  /*color: gray;*/
 }
 
 /* line 319, ../sass/myjourney_basic.css.sass */

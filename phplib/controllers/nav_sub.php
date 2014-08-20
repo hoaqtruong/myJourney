@@ -10,7 +10,7 @@ if (isset($_REQUEST['v'])) {
 
 switch ($main_nav){
         case "instructional_design":
-                $NAV_S = array('ABC_program','bamboo', 'Xgen_leadership', 'IChing');
+                $NAV_S = array('ABC_program','tre_xanh', 'Xgen_leadership', 'IChing');
                 break;
 
 		case "computer_skills":
