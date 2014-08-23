@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Final Exam 4</title>
+<script>
+function checkform(frm) {
+	if (frm.nm.value == "" || frm.nm.value == null)
+	{
+		alert("please enter name!");
+		frm.nm.focus();
+		return false;
+	}
+
+	if (isemail(frm.email) == false)
+	{
+		alert("Please enter email in this format \n abc@abc.com");
+		frm.email.onFocus();
+		return false;
+	}
+	
+	return true;
+}
+function isemail(ele) {
+	if (ele.value.indexOf("@") + "" == "-1" || ele.value.indexOf(".") + "" == "-1" || ele.value == "" || ele.value == null)
+	{
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+</script>
+</head>
+<body>
+<h1>Debug this program</h1>
+<form name="form1" onclick="checkform(this);">
+Your name: <input type="text" name="nm">
+Your email: <input type="text" name="email">
+<br />
+Your message:
+<textarea name="msg" rows="6" cols="20" wrap>
+
+</textarea>
+<br />
+<input type="submit" value="   Send   ">
+<input type="reset" value="   Reset   ">
+</form>
+
+<hr />
+<h3>Question #4</h3>
+There are five errors in this file (only JavaScript errors, no HTML errors):
+<ul><li>two (2) errors in the testing of name field</li>
+<li>one (1) error in the testing of email field</li>
+<li>two (2) errors in the form tag area</li>
+</ul>
+
+</body>
+</html>

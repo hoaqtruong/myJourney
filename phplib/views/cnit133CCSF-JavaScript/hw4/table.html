@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw4-opt: table</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+	var cols = parseInt(prompt("#cols?", 1));
+	var rows = parseInt(prompt("#cols?", 1));
+	
+	var output = "<table>";
+	
+
+	var i = 0;
+	var j = 0;
+	
+
+	for (i=1;i<=rows;i++) {
+		output += "<tr>";
+	
+			for (j=1;j<=cols;j++) {
+					output += '<td style= "border-style: solid; boder-width: 1px">&nbsp;</td>';
+			}
+		
+		output += "</tr>";
+	}
+	
+	output += "</table>";
+	
+			document.write(output);
+	</script>
+</body>
+
+</html>

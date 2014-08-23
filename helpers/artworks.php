@@ -229,7 +229,7 @@ class Artworks {
 	
 	public function create() {
 		global $database;
-		// Don't forget your SQL syntax and good habits:
+		// Don't forget SQL syntax and good habits:
 		// - INSERT INTO table (key, key) VALUES ('value', 'value')
 		// - single-quotes around all values
 		// - escape all values to prevent SQL injection

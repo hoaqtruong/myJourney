@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw8: Menu</title>
+	
+	<style type="text/css">
+	body { 
+	a:link {color: blue} 
+	}
+	</style>
+
+	<script>
+	function chgtxt(txtbox)  {
+		alert("Ah! You want to call me " + txtbox.value + ".\nSorry, I still prefer Sam!");
+		txtbox.value = "Sam";
+	}
+
+	function reloadpage() {
+		window.location.reload();
+	}
+	</script>
+
+
+
+</head>
+
+	<body>		
+		<a href="#" onmouseover="alert('Ooo, that tickles.');">Touch Me</a> <br />
+		<br /><input type="button" onclick="alert('Ouch!');" value="Click Me"> <br />
+		My name is 
+		<input type="text" value="Sam" onchange="chgtxt(this);"> 
+
+		Go ahead, change my name. <br />
+		<input type="button" onclick="reloadpage()" value="Reload">		
+	</body>
+</html>

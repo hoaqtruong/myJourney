@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw6-2: Contact</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-05-04 -->
+	<script type="text/javascript" language="JavaScript">
+	var name = "";
+	function showMap()  {
+
+
+        document.getElementById('map').innerHTML += '<div align="center">' +
+                '<h2>Map to CCSF</h2>' +
+
+        '<img src="ccsf_map.bmp" border="0" alt="CCSF_MAP" width="400" height="400">' +
+                '<form>'+
+                '<input type="button" value="Print" onclick="window.print()">'+
+                '<input type="button" value="Return" onclick="opener.focus()">'+
+                '<input type="button" value="Close" onclick="self.close()">'+
+                '</form>'+
+        '</div>';
+
+
+    }
+
+    function closeMap() {
+        document.getElementById('map').innerHTML = "";
+    }
+
+    function toggleGuide(){
+        if (document.getElementById('guide_on')) {
+            document.getElementById('access_guide').innerHTML = "";
+        } else {
+            document.getElementById('access_guide').innerHTML = '<h2>Access Guide to CCSF</h2>' +
+                    '<iframe id="guide_on" src="http://www.ccsf.edu/Offices/Office_of_Instruction/Access_Guide/" width="600" height="400"></iframe>';
+        }
+
+    }
+
+
+
+	</script>	
+
+</head>
+
+
+
+<body>
+	<h1>Contact us</h1>
+	<p>50 Phelan Avenue<br/>
+	San Francisco, CA 94112<br/>
+	(415) 239-3000</p>
+
+	<p>
+        <a href="javascript: void(0)" onclick="showMap()">View Map</a> *
+        <a href="javascript: void(0)" onclick = "closeMap()"> Close Map</a> |
+	    <a href="javascript: void(0)" onclick="toggleGuide()">Access Guide</a>
+    </p>
+
+
+
+<table>
+    <tr>
+        <td><div id="map"></div></td>
+        <td><div id="access_guide"></div></td>
+    </tr>
+</table>
+
+</body>
+
+</html>

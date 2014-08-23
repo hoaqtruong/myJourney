@@ -53,7 +53,7 @@ class Folder {
                 $img_table .= '<ul class="gallery">'."\n";
 
                 // print the rows
-                //ecards table should looks different, need to be standadized
+                //ecards table should looks different, need to be standardized
 
                 foreach ($imgs as $img) {
                     $index++;

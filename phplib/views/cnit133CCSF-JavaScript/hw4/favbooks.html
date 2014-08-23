@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw4: favbooks</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+
+	var book = "";
+	var i = 0;
+	document.write("<h1>Your top five favorite books</h1><ol>");
+	for (i = 1; i<=5; i++ ) {
+		book = prompt("Enter your #"+ i+ " favorite book", "");
+		book ? document.write("<li>", book,"</li>") : alert("Invalid input");
+	}
+	document.write("</ol>");
+	</script>
+</body>
+
+</html>

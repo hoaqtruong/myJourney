@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Final Exam 1</title>
+
+<script>
+function calc(fm) {
+	
+	var price = 0;
+	var rate;
+	var down;
+	var payment;
+	price =	parseInt(fm["price"].value);
+	if (price <= 0){
+		alert("please enter the price!");
+		fm["price"].focus();		
+		}
+	down = parseInt(fm["down"].value);
+	rate = parseFloat(fm["rate"].value);
+	total = (price - down)*(1 + rate/100);
+	payment = total/60;
+	fm["payment"].value = payment;
+	
+/* car payment calculation function coding here */	
+
+}
+</script>
+</head>
+<body bgcolor="#FFE4E1" id="a">
+<H1>Final Exam Car Payment Calculator(CPC)</h3>
+<p>
+<form>
+<table border="1">
+<tr>
+<td>Car Price:</td>
+<td><input  type="text" value="0" name="price"</td>
+
+</tr>
+<tr>
+<td>Interest rate:</td>
+<td><input type="text" value="5.5" name="rate"></td>
+</tr>
+<tr>
+<td>Number of Years:</td>
+<td>5 years (60 months)
+</td>
+</tr>
+<tr>
+<td>Down Payment:</td>
+<td><input type="text" value="0" name="down"></td>
+</tr>
+
+<tr>
+<td>Monthly Payment:</td>
+<td><input type="text" name="payment" onfocus="this.blur();"></TD>
+</tr>
+</table>
+</p>
+<p>
+<input type="button" value="Calculate" onclick="calc(this.parentElement.parentElement);">
+<input type="RESET" value="Reset">
+</form>
+
+<hr />
+<h3>Question #2</h3>
+Write a JavaScript function - calc()  with parameter/argument to calculate a car payment:
+<ul><li>interest = rate / 100</li>
+
+<li>total = ((price - down) * (1 + interest))</li>
+<li>payment = total / 60 </li>
+</ul>
+
+</body>
+</html>

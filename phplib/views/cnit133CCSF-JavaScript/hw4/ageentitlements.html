@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw4: Ageentitlements</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+
+	var age = "";
+	var msg = "";
+	var done = false;
+	while (!done) {
+		age = parseInt(prompt("Please enter your age",0));
+		age >=1 ? done = true : null;
+		
+		if (age <= 5) msg = " to take a nap every day";
+		if (age <= 13) msg ? msg += ", to be a child, play and have fun" : msg = "to be a child, play and have fun";
+		if (age > 13 && age <=19) msg = " to be a teenager";
+		if (age >= 16) msg ? msg += ", to drive" : msg = " to drive";
+		if (age < 18) msg ? msg += ", to report to your parent" : msg = " to report to your parent";
+		if (age >= 18) msg ? msg += ", vote, legally buy cigarettes" : msg = " vote, legally buy cigarettes";
+		if (age >= 21) msg ? msg += ", legally drink alcohol" : msg = " legally drink alcohol";
+		if (age >= 25) msg ? msg += ", get a discount on car insurance from most insurance companies" : msg = " get a discount on car insurance from most insurance companies";
+		if (age >= 65) msg ? msg += ", to retire, to take nap every day" : msg = " to retire, to take nap every day";
+		if (age >= 122) msg ? msg += ", the OLDEST ever" : msg = " the OLDEST ever";
+		if (age > 200) msg = " to draw blood from others. You are a vampire! GET OUT OF HERE";
+	}		
+	
+	document.write("Being <strong>", age , "</strong> entitles you", msg, ".");
+
+
+	</script>
+</body>
+
+</html>

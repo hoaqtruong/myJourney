@@ -10,15 +10,15 @@ if (isset($_REQUEST['v'])) {
 
 switch ($main_nav){
         case "instructional_design":
-                $NAV_S = array('ABC_program','tre_xanh', 'Xgen_leadership', 'IChing');
+                $NAV_S = array('ABC_program','tre_xanh', 'Xgen_leadership');
                 break;
 
 		case "computer_skills":
-		        $NAV_S = array('flash_actionScript','PHP_CSS_HTML','graphic_design','3D_modeling');
+		        $NAV_S = array('Flash_and_ActionScript','PHP_CSS_HTML','JavaScript','graphic_design','3D_modeling');
 		        break;
 
 		case "personal_projects":
-		        $NAV_S = array('sewing','spirulina','aquaponics','make');
+		        $NAV_S = array('sewing','embroidery','spirulina','aquaponics','make');
 		        break;
 
         default:

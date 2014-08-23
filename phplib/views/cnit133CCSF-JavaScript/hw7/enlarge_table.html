@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw7-1: Table</title>
+	<script type="text/javascript" language="JavaScript">
+
+	function changeBorder(weight)
+	{
+		document.getElementById('mytable').border = weight;
+	}
+
+
+	</script>	
+
+</head>
+
+	<body>
+		<table  id="mytable" border="1">
+		<tr><td id="cell1"><a href="javascript:changeBorder(6);">Larger</a></td>
+		<td id="cell2"><a href="javascript:changeBorder(12);">...And larger</a></td></tr>
+		<tr><td id="cell3"><a href="javascript:changeBorder(4);">Smaller</a></td>
+		<td id="cell4"><a href="javascript:changeBorder(1);">...and Smaller</a></td></tr>
+
+		</table>
+		
+	</body>
+</html>

@@ -158,7 +158,18 @@ ol {
     padding-left: 30px;
 
 }
-
+.notation {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.clearMargin {
+    margin: 0;
+    padding: 0;
+}
+.clearBottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 /* line 54, ../sass/myjourney_basic.css.sass */
 hr {
   border-style: solid 5px ridge;
@@ -181,6 +192,9 @@ img {
 #container {
   width: 95%;
   margin: 0 auto;
+}
+.image-container {
+    display: inline-block;
 }
 
 /* line 71, ../sass/myjourney_basic.css.sass */

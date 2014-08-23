@@ -1,5 +1,45 @@
-<!--<p>If there is something that is effortless for me to acquire it, that is designing. The only difficulty in designing is to satisfy with my work. I can spend hours sticking my eyes in a monitor, just to make some tiny adjustment, or just basically do everything over again. I am pretty happy that I don't treat other things in my life as in designing!'</p> 
-<p>Thanks for visiting my design page. Follow the links on left if you like to check out my design samples.</p>
 
--->
-<img src="./images/hoa/graphic.jpg" width="778px"/>
+<p>Please check out links below for samples of my graphic design works.</p>
+<table>
+    <tr>
+        <td>
+            <ul>
+                <li><a href="?v=computer_skills&s=graphic_design&f=book_covers">Book covers</a></li>
+                <li><a href="?v=computer_skills&s=graphic_design&f=magazine_covers">Magazine covers</a></li>
+                <li><a href="?v=computer_skills&s=graphic_design&f=product_packaging">Product packaging</a></li>
+                <li><a href="?v=computer_skills&s=graphic_design&f=posters">Posters</a></li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><a href="?v=computer_skills&s=graphic_design&f=technical_diagrams">Technical diagrams</a></li>
+                <li><a href="?v=computer_skills&s=graphic_design&f=drawings">Drawings</a></li>
+                <li><a href="?v=computer_skills&s=graphic_design&f=UI_design">UI_design</a></li>
+                <li><a href="?v=computer_skills&s=graphic_design&f=logo_n_more">Logo and mics</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+
+<hr />
+
+
+<h3><?php
+    if (isset($_GET['f']) == null) { echo ucfirst(str_replace('_',' ',$_GET['s']));
+        } else {echo ucfirst(str_replace('_',' ',$_GET['f']));} ?>
+
+
+</h3>
+
+                <div>
+                    <script type="text/javascript"> numPerPage = 3;</script>
+                    <?php echo $folder->display_img_table($imgs,'220px','220px');?>
+                </div>
+
+<br />
+<br />
+<hr />
+
+<!--<img src="./images/hoa/graphic.jpg" width="778px"/>-->

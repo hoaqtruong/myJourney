@@ -1,20 +1,13 @@
 <?php require(CONTROLLERS.'graphic_design.php');?>
-<!--
-<p>I have been designing hundreds of book covers, so many that there are many times when I look at my old book cover marquette, I ask myself "Did I do that?". Fortunately, at least some how I am still able to make them have different look though!</p>
-<p>Thanks for visiting my design page. Follow the links on left if you like to check out my other design samples.</p>
-
--->
-
-
 
 <div>
 	<script type="text/javascript">
-	        numPerPage = 9;
+	        numPerPage = 3;
 	</script>
 
         <?php
 
-        echo $folder->display_img_table($imgs,'170px','220px');
+        echo $folder->display_img_table($imgs);
 
         ?>
 

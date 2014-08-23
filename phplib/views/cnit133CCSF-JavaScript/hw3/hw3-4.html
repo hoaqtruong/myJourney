@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw3-1</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+	<!--
+	
+	
+	var done = false;
+	var num = 0;
+	var reghr = 0;
+	var overhr = 0;
+	var total = 0;
+
+	while (!done) {
+		
+		num = parseInt(prompt("Enter your working hours", 0));
+
+		if (num > 0) {
+			
+			if (num < 40) { reghr = num; }
+			else { reghr = 40 ; overhr = num - 40; }
+			done = true;
+
+		} else {
+
+			alert("Invalid input!");
+		}
+	}
+	
+	var regpay = reghr*10;
+	var overpay = overhr*15;
+	var total = regpay + overpay;
+	
+	document.write("Total hours worked:  ", num,  " hour(s) <br />");
+	document.write("Regular Pay:  ", reghr, "@ $10/hour = $", regpay, "<br />");
+	document.write("Overtime Pay:  ", overhr, "@ $15/hour = $", overpay, "<br />");
+	document.write("Total:  $", total, "<br />");	
+	
+	//-->
+
+	</script>
+</body>
+
+</html>

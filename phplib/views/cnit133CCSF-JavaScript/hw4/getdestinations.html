@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw4-opt: destination</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+	
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+
+	var destination;
+	var newlocation = "";
+	
+	while (!newlocation) {
+		destination = prompt("Pick one destination: \n - Google \n - Amazon \n - CCSF \n - Ebay \n", "");
+		
+		if (destination.toLowerCase().indexOf("google") != -1) {newlocation = "https://www.google.com";}
+		else if (destination.toLowerCase().indexOf("amazon") != -1) {newlocation = "https://www.amazon.com";}
+		else if (destination.toLowerCase().indexOf("ebay") != -1) {newlocation = "https://www.ebay.com";}
+		else if (destination.toLowerCase().indexOf("ccsf") != -1) {newlocation = "http://www.ccsf.edu";}
+		
+		if (newlocation) 
+		window.location = newlocation;
+
+	}
+
+
+	</script>
+</body>
+
+</html>

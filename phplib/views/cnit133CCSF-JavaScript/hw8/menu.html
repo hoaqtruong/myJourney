@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw8: Menu</title>
+	
+	<style>
+	#menu_bar {
+		list-style-type: none;
+	}
+	#menu_bar li {
+		text-decoration: none;
+		float: left;
+	}
+	#button1, #button2, #button3  {
+		position: relative;
+		background: yellow;
+		left: 10px;
+		top: 20px;
+		width: 160px;
+		height: 20px;
+		}
+
+	#menu1, #menu2, #menu3 {
+		float: left;
+		position: relative;
+		background: orange;
+		left: 70px;
+		top: 20px;
+		width: 160px;
+		visibility: hidden;
+		}
+	</style>
+	<script language="JavaScript" type="text/javascript">
+
+		var switcher = null;
+	function openMenu(button) {
+		var a;
+		a = document.getElementById(button).style.visibility;
+		if  (a == "visible") {
+			window.document.getElementById(button).style.visibility = "hidden";
+		} else {
+			if (switcher) {
+				window.document.getElementById(switcher).style.visibility = "hidden";
+				switcher = null;								
+			}
+			window.document.getElementById(button).style.visibility = "visible";
+			switcher = button;
+
+		}
+	}
+	</script>
+
+
+</head>
+
+	<body>
+		
+		
+		<h1>DHTML Menu </h1>
+		
+		<ul id="menu_bar">
+			<li id="button1" onclick="openMenu('menu1')" >Button 1</li>
+			<li id="button2" onclick="openMenu('menu2')" >Button 2</li>
+			<li id="button3" onclick="openMenu('menu3')" >Button 3</li>
+		</ul>
+		<div style="clear: both"> </div>
+
+		<div id="menu1">
+		<a href="#">Option 1</a><br/>
+		<a href="#">Option 2</a><br/>
+		<a href="#">Option 3</a><br/>
+		</div>
+				
+		<div id="menu2">
+		<a href="#">Option 1</a><br/>
+		<a href="#">Option 2</a><br/>
+		<a href="#">Option 3</a><br/>
+		</div>
+		
+		<div id="menu3">
+		<a href="#">Option 1</a><br/>
+		<a href="#">Option 2</a><br/>
+		<a href="#">Option 3</a><br/>
+		</div>
+
+		
+	</body>
+</html>

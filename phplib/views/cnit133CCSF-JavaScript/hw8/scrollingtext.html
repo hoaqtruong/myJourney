@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw8-2: Scrolling Text</title>
+
+<style type="text/css">
+
+#marqueecontainer{
+position: relative;
+width: 200px; /*marquee width */
+height: 200px; /*marquee height */
+background-color: white;
+overflow: hidden;
+border: 3px solid orange;
+padding: 2px;
+padding-left: 4px;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/***********************************************
+* Cross browser Marquee II- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var delayb4scroll=2000 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
+var marqueespeed=2 //Specify marquee scroll speed (larger is faster 1-10)
+var pauseit=1 //Pause marquee onMousever (0=no. 1=yes)?
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var copyspeed=marqueespeed
+var pausespeed=(pauseit==0)? copyspeed: 0
+var actualheight=''
+
+function scrollmarquee(){
+	
+	if (parseInt(cross_marquee.style.top)>(actualheight*(-1)+8))  {
+		cross_marquee.style.top=parseInt(cross_marquee.style.top)-copyspeed+"px"
+	}  else   {
+		cross_marquee.style.top=parseInt(marqueeheight)+8+"px"
+	}
+	
+}
+
+function initializemarquee(){
+cross_marquee=document.getElementById("vmarquee")
+cross_marquee.style.top=0
+marqueeheight=document.getElementById("marqueecontainer").offsetHeight
+actualheight=cross_marquee.offsetHeight
+
+
+
+setTimeout('lefttime=setInterval("scrollmarquee()",30)', delayb4scroll)
+}
+
+
+</script>
+
+</head>
+
+<body onload="initializemarquee();">
+
+
+<div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+<div id="vmarquee" style="position: absolute; width: 98%;">
+
+<!-- scroll text here -->
+<h1>scroll text here</h1>
+Enter your scroll text here, it will move up slowly......
+More text here...
+Enter more and more text here...
+
+</div>
+</div>
+<p><i>Mouse over to stop text scrolling.</i></p>
+
+</body>
+</html>

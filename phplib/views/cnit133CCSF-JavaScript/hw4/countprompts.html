@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw4: countprompts</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+
+	var done = false;
+	var msg = "Please enter a integer between 1 and 100";
+	var num;
+	var count = 0;
+	while (!done) {
+		num = parseInt(prompt(msg, 0));
+		count++;
+		(num >0 && num <= 100) ? done = true : (count == 1)? msg = "Invalid input! \n" + msg : msg=msg;
+	}
+	msg = "You have made "+ count +" attempt(s) before successfully key in the valid number "+ num+ "."
+	alert(msg);
+
+	</script>
+</body>
+
+</html>

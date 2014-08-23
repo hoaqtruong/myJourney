@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Final Exam 3</title>
+	<script>
+	function selectColor() {
+		var color;
+		color = document.forms['f1']['sel'][document.forms['f1']['sel'].selectedIndex].value;
+		if (!(color == "red" || color == "blue" || color == "white")) {
+			alert("please select a color!");
+		}
+		document.getElementsByTagName('h1')[0].innerHTML = "Background Color is " + color;
+		document.bgColor = color;
+
+	}
+	</script>
+
+
+</head>
+
+
+
+<body>
+<h1 name="heading">Change background color</h1>
+<form name="f1">
+<select  name="sel">
+<option value="none">Select color below</option>
+<option value="red">red</option>
+<option value="blue">blue</option>
+<option value="white">white</option>
+
+</select>
+
+<input type="button" value = "Start" onClick="selectColor();">
+</form>
+
+<hr />
+<h3>Question #3</h3>
+Write a JavaScript function to:
+<ul><li>display an error message if user did not pick a color from the select box</li>
+<li>display the color that the user selected</li>
+<li>change the background color with the color that the user selected</li>
+</ul>
+
+</body>
+</html>

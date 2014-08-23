@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw10: Form Validation</title>
+	
+	<script language="JavaScript">
+
+	
+
+	function checkform(frm) {
+		if (isfilled(frm.yourname) == false) {
+			alert("Please enter your name.");
+			frm.yourname.focus();
+			return false;
+		}
+		if (isemail(frm.email) == false) {
+			alert("Please enter email address.\n" + "with this format.\n" + "abc@abc.com");
+			frm.email.focus();
+			return false;
+		}
+		if (isfilled(frm.msg) == false) {
+			alert("Please enter message.");
+			frm.msg.focus();
+			return false;
+		}
+		return true;
+
+
+	}
+	
+	function isfilled(field) {
+		var ele = trim(field.value);
+		if (ele == "" || ele == null)
+			return false;
+		else
+			return true;
+	}
+
+	function isemail(field) {
+		var ele = trim(field.value);
+		if (ele.indexOf("@") + "" != "-1" &&
+			ele.indexOf(".") + "" != "-1"  &&
+			ele != "")
+				return true;
+		else
+			return false;
+	}
+	
+	function trim (myString) {
+		return myString.replace(/^s+/g,'').replace(/s+$/g,'');
+	}
+
+	</script>
+
+
+
+
+</head>
+
+	<body>		
+		<h1>JavaScript Form Validation</h1>
+		<form name="form1" onsubmit="return checkform(this);">
+		<label for="yourname" >Your name:</label><br /> <input type="text" name="yourname">
+		<br />
+		<label for="email" >Your email:</label><br /> <input type="text" name="email">
+		<br />
+		<label for="msg" >Your message:</label><br /> 
+		<textarea name="msg" rows="6" cols="20" wrap>
+		</textarea>
+		<br />		<br />
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		</form>
+		
+	</body>
+</html>

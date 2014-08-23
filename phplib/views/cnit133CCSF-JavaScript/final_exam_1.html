@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Final Exam 1</title>
+
+	<script type="text/javascript" language="JavaScript">
+	var name = '';
+	function getName()  {				
+		while(!name) {
+			name = prompt("Please enter your first name", "");
+		}
+		alert("Hello, "+ name);
+	}
+	</script>
+	
+</head>
+<body>
+<h1>Prompt for Name</h1>
+Click the button to start the program: <br />
+<input type="button" value = "Start" onclick="getName()">
+
+<hr />
+<h3>Question #1</h3>
+Write a JavaScript function without parameter/argument to: <br />
+<ul><li>Prompt the user to enter a first name</li>
+
+<li>If user did not enter first name, then display "You did not enter a first name" alert message</li>
+<li>If user entered a first name, then display "Hello,  ???????" alert message, where ??????? is the first name entered by the user</li>
+</ul>
+
+</body>
+</html>

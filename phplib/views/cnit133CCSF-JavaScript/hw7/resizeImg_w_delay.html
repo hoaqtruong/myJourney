@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw7-2: Image</title>
+	<script type="text/javascript" language="JavaScript">
+
+	function changeSize(size){
+	document.getElementById("ccsf").height=size*322;
+	document.getElementById("ccsf").width=size*430;
+	}
+
+
+
+	</script>	
+
+</head>
+
+	<body>
+		<img id="ccsf" src="mickey_mouse_and_friends-490.jpg" width="430" height="322" />
+		<br /><br />
+		<input type="button" onclick="setTimeout('changeSize(0.5)', 5000)" value="Half size reduce after 5 sec">
+	
+		
+	</body>
+</html>

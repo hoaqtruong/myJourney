@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Hw4-opt: table</title>
+
+	<meta name="author" content="Hoa">
+	<!-- Date: 2010-03-08 -->
+</head>
+
+<body>
+	<script type="text/javascript" language="JavaScript">
+	var bingo = 24;
+	var number;
+	var msg;
+	var count = 0;
+	var margin;
+	
+	var done = false;
+	
+	while (!done) {
+		number = parseInt(prompt("your number?", 0));
+		margin = bingo - number; 
+		margin < 0 ? margin = - margin : null;
+		
+		if (margin == 0) {
+			
+			msg = "Success! You Win! \n";
+			if (count < 5) {
+				msg +="You did an awesome job, it only took you " + count + " tries to guess the number!" ;				
+			} else if (count <= 15) {
+				msg +="Goodness! It took you " + count + " tries to guess the target number!" ;					
+			} else
+			msg +="Yikes! it only took you " + count + " tries to guess the number!" ;
+			
+			done = true;
+			
+			alert(msg);
+		} else {
+			
+			if (margin <= 3) {alert("You are Red Hot!");}
+			else if (margin <= 10) {alert("You're getting warm!");}
+			else if (margin > 10 && margin< 20){ alert("You're getting cold!");}
+			else if (margin > 20) {alert("You're Ice cold!");}
+		}
+		
+		count++;
+		
+	}
+
+
+	</script>
+</body>
+
+</html>
+
+
+
+
