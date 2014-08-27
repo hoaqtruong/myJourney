@@ -1,1 +1,99 @@
-<p>Content for this page is coming soon!</p>
+<p>To make the nitty-gritty sewing jobs more rewarding, I add some favorite graphic design and 3D simulation steps in the process:</p>
+<table>
+    <tr>
+        <td>
+            <ul>
+                <li><a href="?v=personal_projects&s=sewing&f=design_drafting">Drawing designs either by hand or using computer (Corel Painter/Photoshop)</a></li>
+                <li><a href="?v=personal_projects&s=sewing&f=3D_simulation">3D simulating the designs with Marvelous Designer and 3ds Max</a></li>
+                <li><a href="?v=personal_projects&s=sewing&f=2D_patterns">Patterns refining with Adobe Illustrator</a></li>
+                <li><a href="?v=personal_projects&s=sewing&f=needle_works">Results of the nitty-gritty sewing works</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+
+<hr />
+
+
+<h3>
+    <?php
+        if (isset($_GET['f']) == null) {
+            echo ucfirst(str_replace('_',' ',$_GET['s']));
+        } else {
+            echo ucfirst(str_replace('_',' ',$_GET['f']));}
+    ?>
+</h3>
+
+<div>
+    <script type="text/javascript"> numPerPage = 3;</script>
+    <?php
+       if (isset($_GET['f']) && $_GET['f'] == 'design_drafting') {
+            echo '<div class="image-container">' .
+                    '<p>' .
+                        '<a href="./images/personal_projects/sewing/design_drafting/thumbs/collection.gif" target="_blank" >' .
+                            ' <img src="./images/personal_projects/sewing/design_drafting/collection.gif" width="300" id="dresses_annimation" align="left">' .
+                        '</a>'.
+                    '</p>'.
+                '</div>';
+        } else if (isset($_GET['f']) && $_GET['f'] == '3D_simulation') {
+            echo
+
+                '<div id="flashContent">' .
+                    '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="480" id="Blue_shirt_w_Cargo" align="middle">' .
+                        '<param name="movie" value="/flash/Lukas_BlueTShirt_w_Cargo_Pants_10.swf" />' .
+                        '<param name="quality" value="high" />' .
+                        '<param name="bgcolor" value="#003333" />' .
+                        '<param name="play" value="true" />' .
+                        '<param name="loop" value="true" />' .
+                        '<param name="wmode" value="window" />' .
+                        '<param name="scale" value="showall" />' .
+                        '<param name="menu" value="true" />' .
+                        '<param name="devicefont" value="false" />' .
+                        '<param name="salign" value="" />' .
+                        '<param name="allowScriptAccess" value="sameDomain" />' .
+                        '<!--[if !IE]>-->' .
+                        '<object type="application/x-shockwave-flash" data="/flash/Lukas_BlueTShirt_w_Cargo_Pants_10.swf" width="640" height="480">' .
+                            '<param name="movie" value="/flash/Blue_shirt_w_Cargo" />' .
+                            '<param name="quality" value="high" />' .
+                            '<param name="bgcolor" value="#003333" />' .
+                            '<param name="play" value="true" />' .
+                            '<param name="loop" value="true" />' .
+                            '<param name="wmode" value="window" />' .
+                            '<param name="scale" value="showall" />' .
+                            '<param name="menu" value="true" />' .
+                            '<param name="devicefont" value="false" />' .
+                            '<param name="salign" value="" />' .
+                            '<param name="allowScriptAccess" value="sameDomain" />' .
+                            '<!--<![endif]-->' .
+                            '<a href="http://www.adobe.com/go/getflash">' .
+                                '<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />' .
+                            '</a>' .
+                            '<!--[if !IE]>-->' .
+                        '</object>' .
+                        '<!--<![endif]-->' .
+                    '</object>' .
+                '</div>' .
+
+
+                '<div class="image-container">' .
+                    '<p>' .
+                        '<iframe width="640" height="480" src="https://sketchfab.com/models/a5f5a8e63c9b445aa34e4e9896b2d620/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>'.
+                    '</p>'.
+                '</div>'.
+
+                '<div class="image-container">' .
+                    '<p>' .
+                        '<iframe width="640" height="480" src="https://sketchfab.com/models/2511553292b64272a666e9df9d95ba41/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>'.
+                    '</p>'.
+                '</div>';
+        } else {
+            echo $folder->display_img_table($imgs,'220px','220px', true);
+        }
+
+    ?>
+</div>
+
+<br />
+<br />

@@ -97,6 +97,11 @@ body {
   margin-right: 150px;
 }
 
+#view .clearMargin {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
 /* line 32, ../sass/myjourney_basic.css.sass */
 p {
   margin-top: 5px;
@@ -162,6 +167,8 @@ ol {
     font-style: italic;
     font-size: 0.9em;
 }
+
+
 .clearMargin {
     margin: 0;
     padding: 0;
@@ -562,4 +569,30 @@ tbody {
 /* line 323, ../sass/myjourney_basic.css.sass */
 td {
   padding: 10px;
+  vertical-align: top;
 }
+
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin-left: 1.5em 10px;
+    margin-top: 1.5em 10px;
+    margin-bottom: 1.5em 10px;
+    margin-right: 150px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+

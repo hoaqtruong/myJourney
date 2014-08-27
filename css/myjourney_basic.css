@@ -31,6 +31,10 @@ body {
   margin-right: 150px;
 }
 
+#view .clearMargin {
+    margin: 0;
+}
+
 /* line 32, ../sass/myjourney_basic.css.sass */
 p {
   margin-top: 5px;
@@ -106,6 +110,7 @@ ol {
 }
 .clearMargin {
     margin: 0;
+    padding: 0;
 }
 
 /* line 54, ../sass/myjourney_basic.css.sass */

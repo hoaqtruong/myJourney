@@ -1,1 +1,95 @@
-<p>Content for this page is coming soon!</p>
+<p>I enjoy the process of making things:</p>
+<table>
+    <tr>
+        <td>
+            <ul>
+                <li><a href="?v=personal_projects&s=make&f=SF_makeathon">San Francisco Makathon: bike rack</a></li>
+                <li><a href="?v=personal_projects&s=make&f=a_shoe_shelf">A shoe shelf</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+
+<hr />
+
+
+<h3>
+    <?php
+        if (isset($_GET['f']) == null) {
+            echo 'San Francisco Makeathon';
+            /* echo ucfirst(str_replace('_',' ',$_GET['s']));*/
+        } else {
+            echo ucfirst(str_replace('_',' ',$_GET['f']));}
+    ?>
+</h3>
+
+<div>
+    <?php
+        if (isset($_GET['f']) && $_GET['f'] == 'a_shoe_shelf') {
+            echo    '<p>We need a shoe shelf for our apartment in San Francisco. Why not designing and making one?</p>'.
+                    '<p>Here are the 3D model and the actual piece:</p>'.
+                    '<table>' .
+                        '<tr>'.
+                            '<td>'.
+                                '<a href="./images/personal_projects/make/a_shoe_shelf/Shoe_shelf_3D.jpg" target="_blank" >' .
+                                    '<img src="./images/personal_projects/make/a_shoe_shelf/thumbs/Shoe_shelf_3D.jpg" width="370" id="Shoe_shelf_3D">' .
+                                '</a>'.
+                            '</td>'.
+                            '<td>'.
+                                '<a href="./images/personal_projects/make/a_shoe_shelf/Shoe_shelf.jpg" target="_blank" >' .
+                                    '<img src="./images/personal_projects/make/a_shoe_shelf/thumbs/Shoe_shelf.jpg" width="370" id="Shoe_shelf">' .
+                                '</a>'.
+                             '</td>'.
+                        '</tr>'.
+
+                    '</table>'
+
+            ;
+
+
+        } else {
+
+            echo
+                '<p>'.'Makeathon is a "marathon" for makers and artists to develop product within a weekend. I applied and was selected to a team called POPnLOCK, which was the name of the product we designed: an under-surface bike rack. Our team had 5 members; I was in charge of designing a logo, public materials, presentations, etc. for the product, as well as taking part in making the product prototype. </p>'.
+                '<p>The 3D model of the POPnLOCK:'.'</p>'.
+                '<div class="image-container">' .
+                    '<iframe width="800" height="450" src="//www.youtube.com/embed/QRjDSG_Btns" frameborder="0" allowfullscreen></iframe>'.
+                '</div>'.
+                '<br/>'.
+                '<br/>'.
+                '<p>'.'The following picture links to a presentation I created with all details about POPnLOCK:'.'</p>'.
+                '<p>' .
+                    '<a href="./images/personal_projects/make/SF_makeathon/POPnLOCK_Presentation.pdf" target="_blank" >' .
+                    ' <img src="./images/personal_projects/make/SF_makeathon/thumbs/POPnLOCK_Presentation.jpg" id="POPnLOCK_Presentation" align="left">' .
+                    '</a>'.
+                '</p>'.
+                '<div class="image-container">' .
+                    '<br/>'.
+                    '<p>'.'The POPnLOCK prototype and its launching day:'.'</p>'.
+
+                    '<table>' .
+                        '<tr>'.
+                            '<td>'.
+                                '<a href="./images/personal_projects/make/SF_makeathon/POPnLOCK_prototype.jpg" target="_blank" >' .
+                                    '<img src="./images/personal_projects/make/SF_makeathon/thumbs/POPnLOCK_prototype.jpg" width="370" id="POPnLOCK_prototype">' .
+                                '</a>'.
+                            '</td>'.
+                            '<td>'.
+                                '<a href="./images/personal_projects/make/SF_makeathon/POPnLOCK_launching.jpg" target="_blank" >' .
+                                    '<img src="./images/personal_projects/make/SF_makeathon/thumbs/POPnLOCK_launching.jpg" width="370" id="POPnLOCK_launching">' .
+                                '</a>'.
+                            '</td>'.
+                        '</tr>'.
+
+                    '</table>'.
+                '</div>';
+
+    }
+
+    ?>
+</div>
+
+<br />
+<br />

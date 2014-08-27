@@ -18,7 +18,7 @@ switch ($main_nav){
 		        break;
 
 		case "personal_projects":
-		        $NAV_S = array('sewing','embroidery','spirulina','aquaponics','make');
+		        $NAV_S = array('sewing','embroidery', 'make', 'spirulina','aquaponics');
 		        break;
 
         default:
