@@ -1,20 +1,71 @@
-<h2>
-    <div class="vi">
-        <h2>Đôi nét về ba đời họ Trương<br/> qua hồi ức của một người<hr/>Trương Văn Giới</h2>
-    </div>
-    <div class="en">
-        <h2>A glance at a three generations of Truong clan <br/> from a memoir of one <hr/> Truong Van Gioi</h2>
-    </div>
-    <div class="de">
-        <h2>[DE] <br/> from a memoir of one <hr/> Truong Van Gioi</h2>
-    </div>
-</h2>
+<style>
+    .lang-nav ul {list-style:none; padding:0; margin:0 ;}
+    .lang-nav li {float: left; margin: 0 0.15em;}
+    .lang-nav {text-align: center;}
+    .clearfix:after {
+        content: " "; /* Older browser do not support empty content */
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+</style>
+
+
+<script type="text/javascript">
+    $("document").ready(function(){
+        showVI();
+        $('#vi a').click(showVI);
+        $('#en a').click(showEN);
+        $('#de a').click(showGE);
+
+    });
+
+    function showVI () {
+        $(".vi").show();
+        $(".en, .de").hide();
+
+    };
+    function showEN () {
+        $(".en").show();
+        $(".vi, .de").hide();
+
+    };
+    function showGE () {
+        $(".de").show();
+        $(".en, .vi").hide();
+    };
+
+
+
+</script>
+<div id="memoir" class="lang-nav clearfix">
+    <ul>
+        <li id="vi"><a href="#">Vietnamese</a> |</li>
+        <li id="en"><a href="#">English</a> |</li>
+        <li id="de"><a href="#">German</a></li>
+    </ul>
+</div>
+
+<div>
+    <h2>
+        <div class="vi">
+            <h2>Đôi nét về ba đời họ Trương qua hồi ức của một người - Trương Văn Giới</h2>
+        </div>
+        <div class="en">
+            <h2>Three generations of Truong clan from a memoir of one - Truong Van Gioi</h2>
+        </div>
+        <div class="de">
+            <h2>[DE]</h2>
+        </div>
+    </h2>
+</div>
 
 <div timePeriod="06-2014" location="HCM" personID="1" >
 
     <h3 class="vi">Giới thiệu</h3>
     <h3 class="en">Introduction</h3>
-    <h3 class="de">Introduktion</h3>
+    <h3 class="de">Einleitung</h3>
 
     <div class="story" time="06-2014" location="HCM" personID="1">
 
@@ -59,10 +110,10 @@
             <p>Quê tôi ở thôn Nội, xã Bảo Lý, huyện Lý Nhân, tỉnh Hà Nam.</p>
         </div>
         <div class="en">
-            <p>I came from Nội village, Bảo Lý rural commune,Lý Nhân district, Hà Nam province.</p>
+            <p>I came from Noi village, Bao Ly rural commune, Ly Nhan district, Ha Nam province.</p>
         </div>
         <div class="de">
-            <p>Ich kommt aus Dort Noi, Bao Ly village, Ly Nhan ..., Ha Nam ...</p>
+            <p>Ich kam aus Dort Noi, Bao Ly Gemeinde, Ly Nhan Distrikt, Ha Nam Provinz.</p>
         </div>
     </div>
 
@@ -71,16 +122,16 @@
             <p>Tỉnh Hà Nam có diện tích 849km 2, dân số 791.818 người (số liệu 2000), tỉnh lỵ: thị xã Phủ Lý (sau này đổi tên là thị xã Hà Nam – năm trên QL1) và 5 huyện là Kim bảng, Lý Nhân, Thanh liêm, Bình Lục, Duy Tiên. Hà Nam có hai sông lớn là sông Đáy và sông Châu Giang. Sông Châu Giang chảy qua huyện Lý Nhân và chảy vào sông Hồng, sông Luộc chủ yếu nằm trên địa phận tỉnh Thái Bình, có một đoạn nằm ở địa phận Lý Nhân, là chi lưu của sông Hồng. Vĩnh Trụ là thị trấn của huyện Lý Nhân (được chính thức công nhận là thị xã vào 2/1987), nằm trên đường cái lớn đi Phủ Lý và đi các huyện khác trong tỉnh, phố chợ Cầu Không là một thị tứ của xã Bảo Lý. </p>
         </div>
         <div class="en">
-            <p>I came from Nội village, Bảo Lý rural commune,Lý Nhân district, Hà Nam province.</p>
+            <p></p>
         </div>
         <div class="de">
-            <p>Ich kommte aus Dort Noi, ... Bao Ly, Ly Nhan, Ha Nam</p>
+            <p></p>
         </div>
     </div>
 
     <div class="para" time="06-2014" location="HCM" personID="1">
         <div class="vi">
-            <p>Tỉnh Hà Nam có diện tích 849km 2, dân số 791.818 người (số liệu 2000), tỉnh lỵ: thị xã Phủ Lý (sau này đổi tên là thị xã Hà Nam – năm trên QL1) và 5 huyện là Kim bảng, Lý Nhân, Thanh liêm, Bình Lục, Duy Tiên. Hà Nam có hai sông lớn là sông Đáy và sông Châu Giang. Sông Châu Giang chảy qua huyện Lý Nhân và chảy vào sông Hồng, sông Luộc chủ yếu nằm trên địa phận tỉnh Thái Bình, có một đoạn nằm ở địa phận Lý Nhân, là chi lưu của sông Hồng. Vĩnh Trụ là thị trấn của huyện Lý Nhân (được chính thức công nhận là thị xã vào 2/1987), nằm trên đường cái lớn đi Phủ Lý và đi các huyện khác trong tỉnh, phố chợ Cầu Không là một thị tứ của xã Bảo Lý. </p>
+            <p></p>
         </div>
         <div class="en">
             <p></p>
